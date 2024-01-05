@@ -96,7 +96,9 @@ function setDayesCard(forecast) {
         let dateAndTime = new Date(forecast[i].date);
         let hourData = forecast[i].hour[dateAndTime.getHours()];
         let div = document.createElement("div");
-        div.classList.add(["col-lg-4"]);
+        div.classList.add("col-lg-4");
+        div.classList.add("mt-5");
+        div.classList.add("mt-lg-0");
         div.innerHTML = ` <div class="custom-card text-white-50 rounded-3 min-height">
         <div class="card-header d-flex justify-content-center mb-3 p-2 bg-dark  rounded-3">
             <span>${weekDayes[dateAndTime.getDay()]}</span>
