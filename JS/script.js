@@ -9,7 +9,7 @@ search.addEventListener('input', function () {
     }
 });
 async function findLocation(value) {
-    let data = await fetch(`http://api.weatherapi.com/v1/search.json?key=1cd8df4417a64c0f976144621240401&q=${value}`);
+    let data = await fetch(`https://api.weatherapi.com/v1/search.json?key=1cd8df4417a64c0f976144621240401&q=${value}`);
     var jsonData = await data.json();
     addSuggest(jsonData);
 }
@@ -28,7 +28,7 @@ searchBtn.addEventListener("click", function () {
 const weekDayes = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const monthes = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", 'November', "December"]
 async function getData(cityName) {
-    var data = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=1cd8df4417a64c0f976144621240401&q=${cityName}&days=3`,
+    var data = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=1cd8df4417a64c0f976144621240401&q=${cityName}&days=3`,
         {
             headers: {
                 "Accept": "application/json"
