@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ayman Ahmed">
+    <title>Document</title>
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- Main Style-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Media Style-->
+    <link rel="stylesheet" href="CSS/media.css">
+</head>
+
+<body>
+    <header class="bg-dark">
+        <nav class="navbar navbar-expand-lg nav-demo pt-4 pb-3">
+            <div class="container">
+                <div class="logo d-flex">
+                    <div>
+                        <img src="images/logo.png" alt="logo" class="w-100">
+                    </div>
+                    <div class="text-white ps-3">
+                        <h1> Weather</h1>
+                        <p class="text-white-50"> tagline goes here</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="background-image">
+            <div class="container py-5">
+                <div class="search-area position-relative w-75 mx-auto">
+                    <input type="text" placeholder="Find Your Locaion..." name="seach" id="search"
+                        list="datalistOptions" class="form-control rounded-5 p-4 shadow-none mb-5 border-0 text-white ">
+                    <datalist id="datalistOptions">
+
+                    </datalist>
+                    <button class="position-absolute btn btn-info rounded-5 px-5" id="searchBtn"> Find </button>
+                </div>
+                <div class="row d-none" id="row">
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container py-4 ">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class=" text-white-50">Copyright 2014 Company name. Designed by Themezy. All rights
+                            reserved</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class=" d-flex justify-content-center">
+                        <div class="logo d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="fa-brands fa-facebook-f "></i>
+                        </div>
+                        <div class="logo d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="fa-brands fa-twitter "></i>
+                        </div>
+                        <div class="logo d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="fa-brands fa-google-plus "></i>
+                        </div>
+                        <div class="logo d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="fa-brands fa-pinterest-square "></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

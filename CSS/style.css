@@ -1,0 +1,76 @@
+:root{
+    --main-color:#1e202a ;  
+    --second-color:#323544 ;  
+    --third-color:#2d303d ;  
+    --footer-color:#262936 ;  
+    --hover-color:#0dcaf0;
+}
+.home{
+    height: 100vh;
+    background-color: var(--main-color);
+
+}
+.logo h1{
+    font-size: 16px;
+}
+.logo p{
+    font-size: 13px;
+}
+.footer{
+    background-color: var(--footer-color);
+}
+.nav-demo{
+    background-color: var(--main-color);
+}
+#search{
+    background-color: var(--main-color);
+}
+#search::placeholder {
+    color: #EEE;
+    font-size: 16px;
+}
+.background-image{
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+}
+#search:focus{
+    background-color: var(--main-color) ;
+}
+.search-area button{
+    right: 17px;
+    top: 17px;
+}
+
+
+.custom-card{
+    background-color: #323544;
+}
+.temp-number{
+    font-size: 85px;
+}
+.temp-symbol{
+    position: relative;
+    top: -50px;
+    font-size: 20px;
+}
+.temp-symbol-alt{
+    position: relative;
+    top: -20px;
+    font-size: 20px;
+}
+.min-height{
+    min-height: 319.5px;
+}
+
+footer .logo{
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+    margin-right: 5px;
+    transition: all .5s;
+    color: var(--hover-color);
+}
+footer .logo:hover{
+    background-color: var(--hover-color);
+    color: white;
+}
